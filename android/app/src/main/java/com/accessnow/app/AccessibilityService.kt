@@ -1,4 +1,4 @@
-package com.accessnow
+package com.accessnow.app
 
 import android.accessibilityservice.AccessibilityService
 import android.accessibilityservice.AccessibilityServiceInfo
@@ -30,7 +30,7 @@ class RemoteAccessService : AccessibilityService() {
         setupOverlay()
         // Configure the service to listen for custom intent packets.
         val info = AccessibilityServiceInfo().apply {
-            eventTypes = AccessibilityEvent.TYPE_ANY
+            eventTypes = AccessibilityEvent.TYPE_WINDOW_CONTENT_CHANGED
             packageNames = null
             flags = AccessibilityServiceInfo.FLAG_REPORT_VIEW_IDS
             notificationTimeout = 500
