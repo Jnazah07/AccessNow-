@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AccessNow</string>
+    <string name="accessibility_service_description">AccessNow Remote Assistance Service</string>
+</resources>
